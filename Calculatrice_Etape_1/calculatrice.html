@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        button{
+            width : 50px;
+            height : 50px;
+            border : solid;
+            background-color : lightgreen;
+
+        }
+        #afficher_result{
+            color : grey;
+            
+        }
+        body{
+            background-color : lightblue;
+        }
+
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="calculatrice.js"></script>
+    <p id="affichage">
+        <div id="afficher_calc"> </div>
+        <div id="afficher_result"> </div>
+
+    </p>
+    <div id="boutons">
+        <button id="1" onclick="ajouter('1')">1</button>
+        <button id="2" onclick="ajouter('2')">2</button>
+        <button id="3" onclick="ajouter('3')">3</button>
+        <br />
+        <button id="4" onclick="ajouter('4')">4</button>
+        <button id="5" onclick="ajouter('5')">5</button>
+        <button id="6" onclick="ajouter('6')">6</button>
+        <br />
+        <button id="7" onclick="ajouter('7')">7</button>
+        <button id="8" onclick="ajouter('8')">8</button>
+        <button id="9" onclick="ajouter('9')">9</button>
+        <br />
+        <button id="0" onclick="ajouter('0')">0</button>
+        <button id="(" onclick="ajouter('(')">(</button>
+        <button id=")" onclick="ajouter(')')">)</button>
+        <br />
+        <button id="+" onclick="ajouter('+')">+</button>
+        <button id="-" onclick="ajouter('-')">-</button>
+        <button id="*" onclick="ajouter('*')">*</button>
+        <button id="/" onclick="ajouter('/')">/</button>
+        <button id="C" onclick="effacer()">C</button>
+        <button id="Clear" onclick="effacer_all()">Clear</button>
+    </div>
+</body>
+</html>
